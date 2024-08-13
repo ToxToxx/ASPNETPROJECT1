@@ -22,7 +22,7 @@ namespace ASPNETPROJECT1.Models
        
         [Display(Name = "Введите сообщение")]
         [Required(ErrorMessage = "Вам нужно ввести сообщение")]
-        [StringLength(30, ErrorMessage ="Текст не менее 30 символов")]
+        [StringLength(30, ErrorMessage ="Текст менее 30 символов")]
         public string Message { get; set; }
 
     }
