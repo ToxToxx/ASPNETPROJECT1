@@ -3,39 +3,38 @@
     ViewData["Title"] = "Обратная связь";
 }
 
-<h1 style="text-align: center; margin-bottom: 20px;">Обратная связь</h1>
+<h1 class="form-title">Обратная связь</h1>
 
-<form method="post" asp-controller="Contacts" asp-action="Check" style="width: 50%; margin: 0 auto; padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-
-    <div style="margin-bottom: 15px;">
-        <label asp-for="Name" style="display: block; margin-bottom: 5px; font-weight: 600;"></label>
-        <input asp-for="Name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
-        <span asp-validation-for="Name" style="color: #ff0000;"></span>
+<form method="post" asp-controller="Contacts" asp-action="Check" class="contact-form">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
     </div>
 
-    <div style="margin-bottom: 15px;">
-        <label asp-for="Surname" style="display: block; margin-bottom: 5px; font-weight: 600;"></label>
-        <input asp-for="Surname" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
-        <span asp-validation-for="Surname" style="color: #ff0000;"></span>
+    <div class="form-group">
+        <label asp-for="Surname"></label>
+        <input asp-for="Surname" />
+        <span asp-validation-for="Surname"></span>
     </div>
 
-    <div style="margin-bottom: 15px;">
-        <label asp-for="Age" style="display: block; margin-bottom: 5px; font-weight: 600;"></label>
-        <input asp-for="Age" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
-        <span asp-validation-for="Age" style="color: #ff0000;"></span>
+    <div class="form-group">
+        <label asp-for="Age"></label>
+        <input asp-for="Age" />
+        <span asp-validation-for="Age"></span>
     </div>
 
-    <div style="margin-bottom: 15px;">
-        <label asp-for="Email" style="display: block; margin-bottom: 5px; font-weight: 600;"></label>
-        <input asp-for="Email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
-        <span asp-validation-for="Email" style="color: #ff0000;"></span>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
     </div>
 
-    <div style="margin-bottom: 20px;">
-        <label asp-for="Message" style="display: block; margin-bottom: 5px; font-weight: 600;"></label>
-        <input asp-for="Message" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
-        <span asp-validation-for="Message" style="color: #ff0000;"></span>
+    <div class="form-group">
+        <label asp-for="Message"></label>
+        <input asp-for="Message" />
+        <span asp-validation-for="Message"></span>
     </div>
 
-    <input type="submit" value="Отправить" style="width: 100%; padding: 10px; background-color: #ff6a00; color: #fff; font-weight: bold; border-radius: 5px; border: none; cursor: pointer;" />
+    <input type="submit" value="Отправить" class="submit-button" />
 </form>
