@@ -6,24 +6,25 @@ namespace ASPNETPROJECT1.Models
     {
         [Display(Name = "Введите имя")]
         [Required(ErrorMessage = "Вам нужно ввести имя")]
-        public string Name { get; set; }
-       
+        public string? Name { get; set; }
+
         [Display(Name = "Введите фамилию")]
         [Required(ErrorMessage = "Вам нужно ввести фамилию")]
-        public string Surname { get; set; }
-        
+        public string? Surname { get; set; }
+
         [Display(Name = "Введите возраст")]
         [Required(ErrorMessage = "Вам нужно ввести возраст")]
-        public int Age { get; set; }
-        
+        [Range(1, 120, ErrorMessage = "Возраст должен быть между 1 и 120")]
+        public int? Age { get; set; }
+
         [Display(Name = "Введите почту")]
         [Required(ErrorMessage = "Вам нужно ввести почту")]
-        public string Email { get; set; }
-       
+        public string? Email { get; set; }
+
         [Display(Name = "Введите сообщение")]
         [Required(ErrorMessage = "Вам нужно ввести сообщение")]
-        [StringLength(30, ErrorMessage ="Текст менее 30 символов")]
-        public string Message { get; set; }
+        [StringLength(30, ErrorMessage = "Текст менее 30 символов")]
+        public string? Message { get; set; }
 
     }
 }
