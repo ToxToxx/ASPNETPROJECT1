@@ -1,4 +1,4 @@
-/* Общие стили */
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-/* Стили заголовка */
+/* Header styles */
 .form-title {
     text-align: center;
     margin-bottom: 20px;
@@ -19,7 +19,7 @@ body {
     font-weight: 700;
 }
 
-/* Стили формы */
+/* Form styles */
 .contact-form {
     width: 50%;
     margin: 0 auto;
@@ -29,7 +29,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили групп элементов формы */
+/* Form group styles */
 .form-group {
     margin-bottom: 15px;
 }
@@ -54,7 +54,7 @@ body {
             box-shadow: 0 0 5px rgba(255, 106, 0, 0.5);
         }
 
-    /* Стили ошибок валидации */
+    /* Validation error styles */
     .form-group span {
         color: #ff0000;
         font-weight: bold;
@@ -62,7 +62,7 @@ body {
         margin-top: 8px;
     }
 
-/* Стили кнопки отправки */
+/* Submit button styles */
 .submit-button {
     width: 100%;
     padding: 12px 0;
@@ -82,7 +82,7 @@ body {
         transform: scale(1.05);
     }
 
-/* Стили для других частей страницы */
+/* Styles for other parts of the page */
 header {
     width: 100%;
     padding: 20px 10%;
